@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background: rgb(75, 75, 247);
+    color: white;
+    padding: 15px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+    span {
+      margin-right: 20px;
+      font-size: 1.2rem;
+      color: white;
+      outline: none;
+  
+      &:hover {
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+  
