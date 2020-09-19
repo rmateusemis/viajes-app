@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Viaje } from '../../models/viaje';
 import { ViajesModelService } from '../../services/viajes-model.service';
 
@@ -12,7 +13,8 @@ export class ViajesListComponent implements OnInit {
 
   viajes: Viaje[] = [];
 
-  constructor(private viajesModel: ViajesModelService) { }
+  constructor(private viajesModel: ViajesModelService, private router: Router,
+    ) { }
 
   ngOnInit(): void {
     this.cargarListadoViajes();
@@ -29,5 +31,9 @@ export class ViajesListComponent implements OnInit {
     this.viajesModel.deleteViaje(viaje.id).subscribe(x => {
       this.cargarListadoViajes();
     });
+  }
+
+  editarViaje(viaje: Viaje): void {
+      this.router.navigate(['viajes/edit', viaje.id]);
   }
 }

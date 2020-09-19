@@ -1,3 +1,7 @@
 <app-viajes-list-filter></app-viajes-list-filter>
 
-<app-viajes-list-grid [viajes]="viajes" (borrar)="borrarViaje($event)"></app-viajes-list-grid>
+<app-viajes-list-grid
+    [viajes]="viajes"
+    (borrar)="borrarViaje($event)"
+    (editar)="editarViaje($event)">
+</app-viajes-list-grid>

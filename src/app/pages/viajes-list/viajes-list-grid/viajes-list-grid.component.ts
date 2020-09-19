@@ -10,11 +10,17 @@ export class ViajesListGridComponent implements OnInit {
   @Input() viajes: Viaje[] = [];
   @Output() borrar = new EventEmitter<Viaje>();
 
+  @Output() editar = new EventEmitter<Viaje>();
+
   constructor() {}
 
   ngOnInit(): void {}
 
   borrarViaje(viaje: Viaje): void {
     this.borrar.emit(viaje);
+  }
+
+  editarViaje(viaje: Viaje): void {
+    this.editar.emit(viaje);
   }
 }
