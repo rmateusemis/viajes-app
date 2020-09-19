@@ -1,1 +1,29 @@
-<p>viajes-form works!</p>
+<form [formGroup]="viajesForm" (ngSubmit)="guardarViaje(viajesForm.value)">
+    <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" formControlName="nombre">
+    </p>
+    <p>
+        <label for="tipo">Tipo:</label>
+        <input type="text" formControlName="tipo">
+    </p>
+    <p>
+        <label for="duracion">Duración:</label>
+        <input type="number" formControlName="duracion">
+    </p>
+    <p>
+        <label for="destino">destino:</label>
+        <input type="text" formControlName="destino">
+    </p>
+    <p>
+        <label for="plazas">plazas:</label>
+        <input type="number" formControlName="plazas">
+    </p>
+    <p>
+        <label for="rating">rating:</label>
+        <input type="number" formControlName="rating">
+    </p>
+    <p>
+        <button>Guardar</button>
+    </p>
+</form>

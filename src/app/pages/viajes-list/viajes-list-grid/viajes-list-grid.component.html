@@ -9,5 +9,18 @@
             <th>Estado</th>
             <th>Rating</th>
         </thead>
+        <tbody>
+            <ng-container *ngFor="let viaje of viajes">
+                <tr>
+                    <td>{{ viaje.nombre }}</td>
+                    <td>{{ viaje.tipo }}</td>
+                    <td>{{ viaje.duracion }}</td>
+                    <td>{{ viaje.destino }}</td>
+                    <td>{{ viaje.rating }}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+
     </table>
+
 </div>

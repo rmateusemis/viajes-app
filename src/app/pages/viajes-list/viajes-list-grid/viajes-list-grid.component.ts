@@ -8,6 +8,8 @@ import { Viaje } from 'src/app/models/viaje';
 })
 export class ViajesListGridComponent implements OnInit {
 
+  @Input() viajes: Viaje[] = [];
+
   constructor() { }
 
   ngOnInit(): void {

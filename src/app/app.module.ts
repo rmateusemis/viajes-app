@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ViajesListFilterComponent } from './pages/viajes-list/viajes-list-filter/viajes-list-filter.component';
 import { ViajesListGridComponent } from './pages/viajes-list/viajes-list-grid/viajes-list-grid.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
