@@ -6,7 +6,6 @@
             <th>Duración</th>
             <th>Destino</th>
             <th>Plazas</th>
-            <th>Estado</th>
             <th>Rating</th>
         </thead>
         <tbody>
@@ -17,6 +16,8 @@
                     <td>{{ viaje.duracion }}</td>
                     <td>{{ viaje.destino }}</td>
                     <td>{{ viaje.rating }}</td>
+                    <td><button (click)="borrarViaje(viaje)">Delete</button></td>
+                    <td><button>Edit</button></td>
                 </tr>
             </ng-container>
         </tbody>

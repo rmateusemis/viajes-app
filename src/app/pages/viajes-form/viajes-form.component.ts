@@ -26,14 +26,14 @@ export class ViajesFormComponent implements OnInit {
   guardarViaje(datos: any): void {
     this.viajesModel.PostViaje(datos).subscribe(x => {
       this.router.navigate(['viajes']);
-      console.log(datos);
-    })
+      console.log(x);
+    });
   }
 
   private construirForm(fb: FormBuilder): void {
     this.viajesForm = fb.group(
       {
-        id: [null],
+        id: [''],
         nombre: [null],
         tipo: [null],
         duracion: [null],

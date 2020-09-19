@@ -25,4 +25,9 @@ export class ViajesListComponent implements OnInit {
     });
   }
 
+  borrarViaje(viaje: any): void {
+    this.viajesModel.deleteViaje(viaje.id).subscribe(x => {
+      this.cargarListadoViajes();
+    });
+  }
 }

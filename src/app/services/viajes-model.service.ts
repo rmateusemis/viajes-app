@@ -16,4 +16,8 @@ export class ViajesModelService {
   PostViaje(viaje: Viaje): Observable<Viaje> {
     return this.http.post<Viaje>('https://api-coches.herokuapp.com/viajes', viaje);
   }
+
+  deleteViaje(id: string): Observable<Viaje> {
+    return this.http.delete<Viaje>(`https://api-coches.herokuapp.com/viajes/${id}`);
+  }
 }
