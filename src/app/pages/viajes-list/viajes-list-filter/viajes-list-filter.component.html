@@ -1,10 +1,22 @@
-<form [formGroup]="filterForm" (ngSubmit)="filtrarClick(filterForm.value)">
-    <label for="nombre">Nombre:</label>
-    <input type="text" formControlName="nombre">
-    <label for="tipo">Tipo de viaje:</label>
-    <input type="text" formControlName="tipo">
-    <button>Filtrar</button>
-    <button type="button" (click)="limpiarFiltro()">Limpiar Filtro</button>
+<div>
 
-</form>
+    <form class="viajes-form" [formGroup]="filterForm" (ngSubmit)="filtrarClick(filterForm.value)">
+        <div class="inputs">
+            <mat-form-field class="viajes-form-field">
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" formControlName="nombre">
+            </mat-form-field>
 
+            <mat-form-field class="viajes-form-field">
+                <mat-label>Tipo de Viaje</mat-label>
+                <input matInput type="text" formControlName="tipo">
+            </mat-form-field>
+        </div>
+
+        <div class="buttons">
+            <button mat-raised-button color="primary">Filtrar</button>
+            <button mat-raised-button (click)="limpiarFiltro()">Limpiar</button>
+        </div>
+
+    </form>
+</div>

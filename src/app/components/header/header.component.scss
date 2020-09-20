@@ -1,24 +1,27 @@
 .container {
     display: flex;
     flex-direction: row;
-    background: rgb(75, 75, 247);
+    justify-content: center;
+
+    background: #3F51B5;
     color: white;
-    padding: 15px;
+    padding: 20px;
     margin: 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-  
+
     span {
       margin-right: 20px;
+      margin-left: 20px;
       font-size: 1.2rem;
       color: white;
       outline: none;
   
       &:hover {
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
   }

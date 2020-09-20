@@ -1,0 +1,22 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.viajes-form {
+  margin-top: 50px;
+  min-width: 150px;
+  max-width: 600px;
+  width: 100%;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.viajes-form-field {
+  width: 100%;
+}
+
+.viajes-form-field-sm {
+  margin-left: 30px;
+}

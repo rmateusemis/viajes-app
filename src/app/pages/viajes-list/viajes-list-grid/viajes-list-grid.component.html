@@ -1,23 +1,24 @@
 <div>
-    <table>
+    <table class="table">
         <thead>
-            <th>Nombre</th>
-            <th>Tipo de viaje</th>
-            <th>Duración</th>
-            <th>Destino</th>
-            <th>Plazas</th>
-            <th>Rating</th>
+            <th>NOMBRE</th>
+            <th>TIPO DE VIAJE</th>
+            <th>DURACIÓN</th>
+            <th>DESTINO</th>
+            <th>PLAZAS</th>
+            <th>RATING</th>
         </thead>
         <tbody>
             <ng-container *ngFor="let viaje of viajes">
                 <tr>
-                    <td>{{ viaje.nombre }}</td>
-                    <td>{{ viaje.tipo }}</td>
-                    <td>{{ viaje.duracion }}</td>
-                    <td>{{ viaje.destino }}</td>
-                    <td>{{ viaje.rating }}</td>
-                    <td><button (click)="borrarViaje(viaje)">Delete</button></td>
-                    <td><button (click)="editarViaje(viaje)">Edit</button></td>
+                    <td class="td-text">{{ viaje.nombre }}</td>
+                    <td class="td-text">{{ viaje.tipo }}</td>
+                    <td class="td-text">{{ viaje.destino }}</td>
+                    <td class="td-num"><b>{{ viaje.duracion }}</b> días</td>
+                    <td class="td-num">{{ viaje.plazas }}</td>
+                    <td class="td-num">{{ viaje.rating }}</td>
+                    <td class="td-btn"><button mat-raised-button color="primary" (click)="editarViaje(viaje)">Edit</button></td>
+                    <td class="td-btn"><button mat-raised-button color="warn" (click)="borrarViaje(viaje)">Delete</button></td>
                 </tr>
             </ng-container>
         </tbody>
