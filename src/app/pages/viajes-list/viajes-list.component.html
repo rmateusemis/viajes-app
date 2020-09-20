@@ -1,4 +1,4 @@
-<app-viajes-list-filter></app-viajes-list-filter>
+<app-viajes-list-filter [viajes]="viajes" (filtrar)="filtrarViajes($event)" (limpiar)="limpiarFiltro($event)"></app-viajes-list-filter>
 
 <app-viajes-list-grid
     [viajes]="viajes"

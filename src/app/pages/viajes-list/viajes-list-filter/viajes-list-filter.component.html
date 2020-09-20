@@ -1,1 +1,10 @@
-<p>viajes-list-filter works!</p>
+<form [formGroup]="filterForm" (ngSubmit)="filtrarClick(filterForm.value)">
+    <label for="nombre">Nombre:</label>
+    <input type="text" formControlName="nombre">
+    <label for="tipo">Tipo de viaje:</label>
+    <input type="text" formControlName="tipo">
+    <button>Filtrar</button>
+    <button type="button" (click)="limpiarFiltro()">Limpiar Filtro</button>
+
+</form>
+
