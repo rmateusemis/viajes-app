@@ -1,0 +1,17 @@
+<div>
+    <form class="viajes-form" [formGroup]="loginForm"
+        (ngSubmit)="login(loginForm.value.user, loginForm.value.password)">
+
+        <mat-form-field class="viajes-form-field">
+            <mat-label>Usuario</mat-label>
+            <input matInput type="text" formControlName="user">
+        </mat-form-field>
+
+        <mat-form-field class="viajes-form-field">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary">Login</button>
+    </form>
+</div>

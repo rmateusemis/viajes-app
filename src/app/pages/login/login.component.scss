@@ -2,28 +2,22 @@ div {
     display: flex;
     justify-content: center;
   }
-
-  .table {
+  
+  .viajes-form {
     margin-top: 50px;
     min-width: 150px;
-    max-width: 1200px;
+    max-width: 400px;
+    width: 100%;
     border: rgb(209, 209, 209) 1px solid;
     border-radius: 5px;
     padding: 20px;
   }
-
-  thead {
-      border: rgb(209, 209, 209) 1px solid;
+  
+  .viajes-form-field {
+    width: 100%;
   }
   
-  th {
-      text-align: left;
+  .viajes-form-field-sm {
+    margin-left: 30px;
   }
-
-.td-num {
-    width: 80px;
-}
-
-.td-text {
-    width: 200px;
-}
+  
